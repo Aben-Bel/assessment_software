@@ -1,8 +1,16 @@
+<!-- {{test}} -->
 <input
-  id="myTextField"
-  value="value"
-  placeholder="email"
-  color="red"
-  required
-  type="text"
-/>
+        [id]="id"
+        [value]="value"
+        [placeholder]="placeholder"
+        [autofocus]="autofocus"
+        [required]="required"
+        [ngClass]="classes"
+        [style.background-color]="variant === 'Filled' ? '#EEE' : 'none'"
+        [style.border]="variant === 'Outlined' ? '1px solid #000' : 'none'"
+        [style.color]="color"
+        [type]="type"
+        (input)="handleChange($event)"
+        aria-describedby="error ? 'error-desc' : null"
+    />
+    <div *ngIf="error" id="error-desc" style="color: red;">Error</div>
