@@ -8,7 +8,6 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 })
 
 export class TextField{
-    // test:any;
     @Input() id: string = '';
     @Input() value: string = '';
     @Input() variant: 'Standard' | 'Filled' | 'Outlined' = 'Standard';
