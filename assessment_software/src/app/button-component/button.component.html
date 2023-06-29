@@ -1,0 +1,12 @@
+<button
+  class="button-primary"
+  [id]="id ? id : 'btn'"
+  [ngClass]="classes"
+  [style.background-color]="variant === 'Filled' ? '#3056d3' : 'transparent'"
+  [style.border]="variant === 'Outlined' ? '1px solid #3056d3' : 'none'"
+  [style.color]="color ? color : 'black'"
+  type="button"
+  (click)="handleClick($event)"
+>
+  <ng-content></ng-content>
+</button>
