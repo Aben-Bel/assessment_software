@@ -4,13 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { TextField } from './TextField-Component/TextField.component';
-import { ButtonComponent } from './button-component/button.component';
+import {TextField} from './TextField-Component/TextField.component';
 
 @NgModule({
-  declarations: [AppComponent, TextField, ButtonComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    TextField,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
