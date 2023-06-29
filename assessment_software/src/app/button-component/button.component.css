@@ -5,6 +5,8 @@
   line-height: 22px;
   word-wrap: break-word;
 }
+   @apply text-white bg-indigo-600 py-2.5 px-5 rounded-lg border-0 hover:bg-indigo-700;
+
 
 .button-primary {
   width: 128px;
