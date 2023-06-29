@@ -1,15 +1,6 @@
-.button-text {
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 22px;
-  word-wrap: break-word;
-}
-   @apply text-white bg-indigo-600 py-2.5 px-5 rounded-lg border-0 hover:bg-indigo-700;
-
+@import "../../../node_modules/tailwindcss/tailwind.css";
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 .button-primary {
-  width: 128px;
-  height: 36px;
-  border-radius: 4px;
+  @apply text-white bg-indigo-600 py-2.5 px-5 rounded-lg border-0 hover:bg-indigo-700;
 }
