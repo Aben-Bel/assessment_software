@@ -1,6 +1,7 @@
 <input [type]="type"
 [accept]="accept"
 [ngClass]="styles"
-(change)="handleFileSize($event)">
+(change)="handleFileSize($event)"
+(change)="fileUploaded($event)">
 
-<div *ngIf="error" style="color: red;">Sorry, the file you uploaded is too large. The maximum file size is {{fileSizeLimit}} MB</div>
+<div *ngIf="error" style="color: red;">{{errorMessage}}</div>

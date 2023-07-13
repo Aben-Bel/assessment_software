@@ -38,9 +38,10 @@
 accept=".txt"
 fileSizeLimit=2
 ></app-file-upload>
-<br/><br/>
+<br/>
 <app-file-upload
 accept=".txt"
-fileSizeLimit=1.5
 [error]=true
+(fileSelected)="eventOutput($event)"
 ></app-file-upload>
+<!-- <p *ngFor="let file of fileSelected">{{file.name}}</p> -->
