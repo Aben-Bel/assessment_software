@@ -1,0 +1,10 @@
+  input[type="file"] {
+    @apply rounded border border-solid border-gray-300 text-sm font-sans text-gray-400 p-2;
+    }
+  
+  input[type="file"]::file-selector-button {
+     
+    @apply text-gray-600 cursor-pointer bg-gray-200 rounded border border-solid border-gray-100 p-1 mr-4;
+   
+  }
+  

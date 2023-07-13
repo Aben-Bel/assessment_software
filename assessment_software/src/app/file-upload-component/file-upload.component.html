@@ -1,0 +1,7 @@
+<input [type]="type"
+[accept]="accept"
+[ngClass]="styles"
+(change)="handleFileSize($event)"
+(change)="fileUploaded($event)">
+
+<div *ngIf="error" style="color: red;">{{errorMessage}}</div>

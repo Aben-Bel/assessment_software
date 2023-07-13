@@ -3,7 +3,7 @@
 <app-button variant="Outlined" color="#3056D3"> Outlined</app-button>
 <app-button variant="Filled" color="white"> Filled</app-button>
 <app-button variant="Standard" color="#3056D3"> Standard</app-button>
-
+<br />
 <app-textfield
   placeholder="Standard"
   variant="Standard"
@@ -24,6 +24,7 @@
   type="password"
   classes="textfield-skin"
 ></app-textfield>
+<br />
 <app-textfield
   placeholder="Filled"
   variant="Filled"
@@ -32,3 +33,15 @@
   [error]="true"
   errorMessage="Error occurred"
 ></app-textfield>
+
+<app-file-upload
+accept=".txt"
+fileSizeLimit=2
+></app-file-upload>
+<br/>
+<app-file-upload
+accept=".txt"
+[error]=true
+(fileSelected)="eventOutput($event)"
+></app-file-upload>
+<!-- <p *ngFor="let file of fileSelected">{{file.name}}</p> -->
