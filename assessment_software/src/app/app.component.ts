@@ -8,10 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'assessment_software';
   fileSelected:any[]=[];
+  textAreaValue:string='';
 
   eventOutput(newFile:any){
-
     this.fileSelected=newFile;
-    
+  }
+  textAreaOutput(newText:string){
+    this.textAreaValue=newText;
   }
 }

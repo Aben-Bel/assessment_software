@@ -1,0 +1,3 @@
+.textarea-skin{
+    @apply border border-gray-300 rounded border-solid text-gray-600 font-sans resize-none;
+}

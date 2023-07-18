@@ -13,7 +13,7 @@ export class TextField{
     @Input() variant: 'Standard' | 'Filled' | 'Outlined' = 'Standard';
     @Input() placeholder: string = '';
     @Input() autofocus: boolean = false;
-    @Input() classes: string = 'red';
+    @Input() classes: string = 'textfield-skin';
     @Input() color: string = 'black';
     @Input() error: boolean = false;
     @Input() required: boolean = false;
