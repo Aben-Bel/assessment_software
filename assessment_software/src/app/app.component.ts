@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'assessment_software';
   fileSelected:any[]=[];
+  pathDisplay:string[]=['DSA','Assignment','Assignment 1','Edit Assignment'];
+  links:string[]=['/DSA','/Assignment','/Assignment 1','/Edit Assignment'];
 
   eventOutput(newFile:any){
-
-    this.fileSelected=newFile;
-    
+    this.fileSelected=newFile; 
   }
 }

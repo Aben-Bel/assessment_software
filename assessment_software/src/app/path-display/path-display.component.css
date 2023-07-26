@@ -1,0 +1,3 @@
+.path-skin{
+    @apply inline text-gray-500 font-sans font-semibold no-underline;
+}
