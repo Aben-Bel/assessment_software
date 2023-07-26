@@ -1,3 +1,7 @@
-.path-skin{
-    @apply inline text-gray-500 font-sans font-semibold no-underline;
+.pathSkin{
+    @apply inline text-gray-500 font-sans no-underline font-medium;
+}
+
+.first{
+    @apply font-semibold text-gray-800 font-sans no-underline;
 }

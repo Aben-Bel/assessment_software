@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
 export class PathDisplayComponent {
   @Input () pathDisplay:string[]=[];
   @Input () links:string[]=[];
-  @Input () style:string='path-skin';
-
+ 
 }
