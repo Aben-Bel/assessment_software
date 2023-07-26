@@ -12,9 +12,6 @@ export class AppComponent {
   pathDisplay:string[]=['DSA','Assignment','Assignment 1','Edit Assignment'];
   links:string[]=['/DSA','/Assignment','/Assignment 1','/Edit Assignment'];
 
-  eventOutput(newFile:any){
-    this.fileSelected=newFile; 
-
   textAreaValue:string='';
 
   eventOutput(newFile:any){
