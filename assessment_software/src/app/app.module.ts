@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { TextField } from './TextField-Component/TextField.component';
 import { ButtonComponent } from './button-component/button.component';
 import { FileUploadComponent } from './file-upload-component/file-upload.component';
+import {TextareaComponent} from './textarea-component/textarea.component'
 import { PathDisplayComponent } from './path-display/path-display.component';
 
 @NgModule({
-  declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, PathDisplayComponent],
+  declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, PathDisplayComponent],
+
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
