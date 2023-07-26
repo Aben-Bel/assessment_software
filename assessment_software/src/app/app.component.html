@@ -40,7 +40,12 @@ accept=".txt"
 [error]=true
 (fileSelected)="eventOutput($event)"
 ></app-file-upload>
+<br/>
 <!-- <p *ngFor="let file of fileSelected">{{file.name}}</p> -->
+<app-path-display
+[links]="['/DSA','/Assignment','/Assignment 1','/Edit Assignment']"
+[pathDisplay]="['DSA','Assignment','Assignment 1','Edit Assignment']"
+></app-path-display>
 <app-textarea
 [maxlength]=30
 [minlength]=10

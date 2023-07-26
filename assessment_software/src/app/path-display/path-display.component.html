@@ -1,0 +1,5 @@
+<a *ngFor="let path of pathDisplay; index as i;"
+[href]="links[i]"
+[ngClass]="{pathSkin: i !== 0, first: i === 0}"
+>{{path}} / 
+</a>
