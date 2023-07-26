@@ -9,10 +9,10 @@ export class TextareaComponent{
     @Input () styleClass:string='textarea-skin';
     @Input() maxlength:number=0;
     @Input() minlength:number=0;
-    @Output() value= new EventEmitter<string>();
+    @Output() onValueChange= new EventEmitter<string>();
 
     newTextAreaValue(event:any){
         
-        this.value.emit(event.target.value);
+        this.onValueChange.emit(event.target.value);
     }
 }
