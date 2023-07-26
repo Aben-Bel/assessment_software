@@ -8,28 +8,24 @@
   placeholder="Standard"
   variant="Standard"
   type="text"
-  classes="textfield-skin"
 ></app-textfield>
 <br />
 <app-textfield
   placeholder="Outlined"
   variant="Outlined"
   type="email"
-  classes="textfield-skin"
 ></app-textfield>
 <br />
 <app-textfield
   placeholder="Filled"
   variant="Filled"
   type="password"
-  classes="textfield-skin"
 ></app-textfield>
 <br />
 <app-textfield
   placeholder="Filled"
   variant="Filled"
   type="password"
-  classes="textfield-skin"
   [error]="true"
   errorMessage="Error occurred"
 ></app-textfield>
@@ -45,3 +41,9 @@ accept=".txt"
 (fileSelected)="eventOutput($event)"
 ></app-file-upload>
 <!-- <p *ngFor="let file of fileSelected">{{file.name}}</p> -->
+<app-textarea
+[maxlength]=30
+[minlength]=10
+(onValueChange)="textAreaOutput($event)"
+></app-textarea>
+<!-- <p>{{textAreaValue}}</p> -->
