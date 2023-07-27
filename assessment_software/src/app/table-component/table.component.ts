@@ -6,12 +6,14 @@ styleUrls:['./table.component.css']
 })
 
 export class TableComponent{
-     @Input() width:Number=0;
-     @Input() data=[{
-      name:"",
+    @Input() headers:string[]=[]; 
+    @Input() width:Number=400;
+    @Input() data: {[key: string]: string}[]=[{
+      Name:"",
       ID:"",
-      passcode:"",
-      email:""
+      Passcode:"",
+      Email:"",
      }
-   ]
+   ];
+
 }

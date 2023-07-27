@@ -14,17 +14,18 @@ export class AppComponent {
 
   textAreaValue:string='';
 
+  headers:string[]=['Name','ID','Passcode','Email',"koo"];
   data:any[]=[{
-    name:"Abebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    Name:"Abebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
     ID:"1",
-    passcode:"",
-    email:""
+    Passcode:"",
+    Email:""
    },
    {
-    name:"Bekele",
+    Name:"Bekele",
     ID:"2",
-    passcode:"",
-    email:""
+    Passcode:"",
+    Email:""
    }
  ]
 

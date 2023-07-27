@@ -1,14 +1,8 @@
 <table [width]="width">
     <tr>
-        <th>Name</th>
-        <th>ID</th>
-        <th>Passcode</th>
-        <th>Email</th>
+        <th  *ngFor="let head of headers">{{head}}</th>
     </tr>
     <tr *ngFor="let d of data">
-        <td>{{d.name}}</td>
-        <td>{{d.ID}}</td>
-        <td>{{d.passcode}}</td>
-        <td>{{d.email}}</td>
+        <td *ngFor="let head of headers">{{d[head]}}</td>
     </tr>
 </table>
