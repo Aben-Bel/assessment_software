@@ -1,6 +1,6 @@
 table{
-    @apply box-border border border-solid border-collapse;
+    @apply box-border border border-solid border-collapse table-fixed;
 }
 td,th{
-    @apply box-border border border-solid text-left font-sans text-sm;
+    @apply box-border border border-solid text-left font-sans text-sm break-words;
 }

@@ -15,7 +15,7 @@ export class AppComponent {
   textAreaValue:string='';
 
   data:any[]=[{
-    name:"Abebe",
+    name:"Abebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
     ID:"1",
     passcode:"",
     email:""
