@@ -1,0 +1,10 @@
+table{
+    @apply box-border;
+}
+.fixed{
+    @apply box-border table-fixed ;
+}
+
+.auto{
+    @apply box-border table-auto text-red-300;
+}

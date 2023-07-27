@@ -9,9 +9,11 @@ import { ButtonComponent } from './button-component/button.component';
 import { FileUploadComponent } from './file-upload-component/file-upload.component';
 import {TextareaComponent} from './textarea-component/textarea.component'
 import { PathDisplayComponent } from './path-display/path-display.component';
+import {TableComponent} from './table-component/table.component';
 
 @NgModule({
-  declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, PathDisplayComponent],
+  declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, 
+    PathDisplayComponent, TableComponent],
 
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
