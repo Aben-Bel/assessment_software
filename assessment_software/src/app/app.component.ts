@@ -14,6 +14,20 @@ export class AppComponent {
 
   textAreaValue:string='';
 
+  data:any[]=[{
+    name:"Abebe",
+    ID:"1",
+    passcode:"",
+    email:""
+   },
+   {
+    name:"Bekele",
+    ID:"2",
+    passcode:"",
+    email:""
+   }
+ ]
+
   eventOutput(newFile:any){
     this.fileSelected=newFile;
   }

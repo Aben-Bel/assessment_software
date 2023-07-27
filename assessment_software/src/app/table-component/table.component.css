@@ -1,10 +1,6 @@
 table{
-    @apply box-border;
+    @apply box-border border border-solid border-collapse;
 }
-.fixed{
-    @apply box-border table-fixed ;
-}
-
-.auto{
-    @apply box-border table-auto text-red-300;
+td,th{
+    @apply box-border border border-solid text-left font-sans text-sm;
 }

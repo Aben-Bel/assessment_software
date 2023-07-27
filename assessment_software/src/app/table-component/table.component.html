@@ -1,6 +1,14 @@
-<table border="1">
+<table>
     <tr>
-        <td [width]="width">daaaaaaaab</td>
-        <td>bccccccccccqc</td>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Passcode</th>
+        <th>Email</th>
+    </tr>
+    <tr *ngFor="let d of data">
+        <td [width]="width">{{d.name}}</td>
+        <td [width]="width">{{d.ID}}</td>
+        <td [width]="width">{{d.passcode}}</td>
+        <td [width]="width">{{d.email}}</td>
     </tr>
 </table>
