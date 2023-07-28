@@ -1,6 +1,18 @@
 table{
-    @apply box-border border border-solid border-collapse table-fixed;
+    @apply border border-solid border-collapse;
+}
+.fixed{
+    @apply table-fixed;
+}
+.auto{
+    @apply table-auto;
 }
 td,th{
-    @apply box-border border border-solid text-left font-sans text-sm break-words ;
+    @apply border-solid border text-left font-sans text-sm box-border;
+}
+.scrollable{
+    @apply overflow-x-auto w-1/2;
+}
+.wrapping{
+    @apply break-words table-fixed;
 }

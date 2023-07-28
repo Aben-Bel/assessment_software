@@ -1,5 +1,18 @@
 <p>Hello World</p>
-
+<app-table
+[data]="data"
+[headers]="headers"
+wrapStyle="wrapping"
+layout="fixed"
+scrollStyle="scrollable"
+></app-table>
+<br/>
+<app-table
+[data]="data"
+[headers]="headers"
+layout="auto"
+scrollStyle="scrollable"
+></app-table>
 <app-button variant="Outlined" color="#3056D3"> Outlined</app-button>
 <app-button variant="Filled" color="white"> Filled</app-button>
 <app-button variant="Standard" color="#3056D3"> Standard</app-button>
@@ -53,7 +66,4 @@ accept=".txt"
 (onValueChange)="textAreaOutput($event)"
 ></app-textarea>
 <!-- <p>{{textAreaValue}}</p> -->
-<app-table
-[data]="data"
-[headers]="headers"
-></app-table>
+

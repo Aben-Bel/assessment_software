@@ -7,7 +7,7 @@ styleUrls:['./table.component.css']
 
 export class TableComponent{
     @Input() headers:string[]=[]; 
-    @Input() width:Number=400;
+    @Input() width:Number=700;
     @Input() data: {[key: string]: string}[]=[{
       Name:"",
       ID:"",
@@ -15,5 +15,8 @@ export class TableComponent{
       Email:"",
      }
    ];
+   @Input() wrapStyle:string='';
+   @Input() scrollStyle:string='';
+   @Input() layout:string='';
 
 }

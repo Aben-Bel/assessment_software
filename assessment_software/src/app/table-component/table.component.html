@@ -1,8 +1,10 @@
-<table [width]="width">
+<div [ngClass]="scrollStyle">
+<table [width]="width" [ngClass]="layout">
     <tr>
-        <th  *ngFor="let head of headers">{{head}}</th>
+        <th  *ngFor="let head of headers" [ngClass]="wrapStyle">{{head}}</th>
     </tr>
     <tr *ngFor="let d of data">
-        <td *ngFor="let head of headers">{{d[head]}}</td>
+        <td *ngFor="let head of headers" [ngClass]="wrapStyle">{{d[head]}}</td>
     </tr>
 </table>
+</div>
