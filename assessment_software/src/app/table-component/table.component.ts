@@ -8,15 +8,10 @@ styleUrls:['./table.component.css']
 export class TableComponent{
     @Input() headers:string[]=[]; 
     @Input() width:Number=700;
-    @Input() data: {[key: string]: string}[]=[{
-      Name:"",
-      ID:"",
-      Passcode:"",
-      Email:"",
-     }
-   ];
-   @Input() wrapStyle:string='';
-   @Input() scrollStyle:string='';
+    @Input() data: {[key: string]: string}[]=[{ }];
+   @Input() wrapStyle:boolean=false;
+   @Input() scrollStyle:boolean=false;
    @Input() layout:string='';
+   
 
 }
