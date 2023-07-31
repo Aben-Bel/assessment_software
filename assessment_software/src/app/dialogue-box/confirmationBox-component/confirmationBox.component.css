@@ -1,7 +1,10 @@
 .confirm{
-    @apply font-sans text-sm bg-gray-50 rounded-md p-12 w-max;
+    @apply font-sans text-sm bg-gray-50 rounded-md p-12 w-max relative;
 }
 
 p{
     @apply font-bold text-lg text-center underline decoration-blue-700 underline-offset-[15px];
+}
+button{
+    @apply bg-transparent text-lg border-none cursor-pointer absolute top-0 right-0 h-8 w-8;
 }
