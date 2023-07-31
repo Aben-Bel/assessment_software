@@ -1,0 +1,18 @@
+table{
+    @apply border border-solid border-collapse;
+}
+.fixed{
+    @apply table-fixed;
+}
+.auto{
+    @apply table-auto;
+}
+td,th{
+    @apply border-solid border text-left font-sans text-sm box-border;
+}
+.scrollable{
+    @apply overflow-x-auto w-1/2;
+}
+.wrapping{
+    @apply break-words table-fixed;
+}
