@@ -1,10 +1,10 @@
-<div [ngClass]="{scrollable: scrollStyle===true}">
+<div [ngClass]="{scrollable: isScrollable===true}">
 <table [width]="width" [ngClass]="layout">
     <tr>
-        <th  *ngFor="let head of headers" [ngClass]="{wrapping: wrapStyle===true}">{{head}}</th>
+        <th  *ngFor="let head of headers" [ngClass]="{wrapping: isWrappable===true}">{{head}}</th>
     </tr>
     <tr *ngFor="let d of data">
-        <td *ngFor="let head of headers" [ngClass]="{wrapping: wrapStyle===true}">{{d[head]}}</td>
+        <td *ngFor="let head of headers" [ngClass]="{wrapping: isWrappable===true}">{{d[head]}}</td>
     </tr>
 </table>
 </div>

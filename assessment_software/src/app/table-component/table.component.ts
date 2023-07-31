@@ -9,8 +9,8 @@ export class TableComponent{
     @Input() headers:string[]=[]; 
     @Input() width:Number=700;
     @Input() data: {[key: string]: string}[]=[{ }];
-   @Input() wrapStyle:boolean=false;
-   @Input() scrollStyle:boolean=false;
+   @Input() isWrappable:boolean=false;
+   @Input() isScrollable:boolean=false;
    @Input() layout:string='';
    
 
