@@ -1,0 +1,7 @@
+.confirm{
+    @apply font-sans text-sm bg-gray-50 rounded-md p-12 w-max;
+}
+
+p{
+    @apply font-bold text-lg text-center underline decoration-blue-700 underline-offset-[15px];
+}

@@ -5,5 +5,6 @@ templateUrl:'./confirmationBox.component.html',
 styleUrls:['./confirmationBox.component.css']})
 
 export class ConfirmationBoxComponent{
-    @Input() message:string='Successfully submitted assignment';
+    @Input() confirmation_message:string='Successfully submitted assignment';
+    @Input() confirmationStyle='confirm';
 }
