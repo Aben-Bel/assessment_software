@@ -1,7 +1,10 @@
-<div class="warning">
+<div class="warning" [ngClass]="isCancelClicked? 'hide-dialogue':''">
     <p>{{warning_message}}</p>
-    <div style="padding-top: 30px;">
-        <app-button variant="Standard" color="gray"> Cancel</app-button>
-        <app-button variant="Filled" color="white" background="#b91b1b"> View Details</app-button>
+    <div style="padding-top: 30px;" class="message-button">
+        <app-button variant="Standard" color="gray" 
+        (onClick)="handleClick($event)" 
+        (onClick)="warningButtonClicked($event)">Cancel</app-button>
+        <app-button variant="Filled" color="white" background="#b91b1b"
+        (onClick)="warningButtonClicked($event)">Yes</app-button>
     </div>
 </div>

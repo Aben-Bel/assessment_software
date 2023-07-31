@@ -1,7 +1,9 @@
-.success{
-    @apply font-sans text-sm bg-gray-50 rounded-md p-12 w-max;
+.message-box{
+    @apply font-sans text-sm bg-gray-50 rounded-md p-12 w-max relative;
 }
-
+.message-button{
+    @apply text-center;
+}
 p{
     @apply font-bold text-lg text-center underline decoration-blue-700 underline-offset-[15px];
 }
