@@ -1,0 +1,10 @@
+<div class="message-box" [ngClass]="isCancelClicked? 'hide-message-box':''">
+    <p>{{success_message}}</p>
+    <div style="padding-top: 30px;" class="message-button">
+        <app-button variant="Standard" color="gray" 
+        (onClick)="hideMessageBox()">Cancel</app-button>
+        <app-button variant="Filled" color="white"
+        (onClick)="successButtonClicked($event)"
+        (onClick)="hideMessageBox()">View Details</app-button>
+    </div>
+</div>
