@@ -6,7 +6,7 @@ styleUrls:['./warningBox.component.css']})
 
 export class WarningBoxComponent{
     @Input() warning_message:string='Are you sure you want to archive this assignment?';
-    @Output() onButtonClick=new EventEmitter;
+    @Output() onWarningButtonClick=new EventEmitter;
     isCancelClicked:boolean=false;
     handleClick(event: Event) {
         let htmlElement = <HTMLElement>event.target;
@@ -14,7 +14,6 @@ export class WarningBoxComponent{
             this.isCancelClicked=true;
     }
     warningButtonClicked(event: Event) {
-        let htmlElement = <HTMLElement>event.target;
-        this.onButtonClick.emit(htmlElement.innerHTML)
+        this.onWarningButtonClick.emit(event)
     }
 }

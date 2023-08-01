@@ -6,9 +6,13 @@ styleUrls:['./successBox.component.css']})
 
 export class SuccessBoxComponent{
     @Input() success_message:string='Successfully added assignment';
-    @Output() onClick = new EventEmitter<Event>();
+    isCancelClicked:boolean=false;
+    @Output() onSuccessButtonClick = new EventEmitter<Event>();
 
-    handleClick(event: Event) {
-      this.onClick.emit(event);
+    successButtonClicked(event: Event) {
+      this.onSuccessButtonClick.emit(event);
+    }
+    hideMessageBox(){
+     this.isCancelClicked=true;
     }
 }

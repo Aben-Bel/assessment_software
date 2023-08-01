@@ -6,5 +6,8 @@ styleUrls:['../successBox-component/successBox.component.css', './confirmationBo
 
 export class ConfirmationBoxComponent{
     @Input() confirmation_message:string='Successfully submitted assignment';
-
+    hideBox:boolean=false;
+    closeDialogueBox(){
+        this.hideBox=true;
+    }
 }

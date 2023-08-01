@@ -1,9 +1,10 @@
 <p>Hello World</p>
 <app-confirmation-box></app-confirmation-box><br/>
 <app-warning-box
-(onButtonClick)="dialogueBoxButton($event)"
+(onWarningButtonClick)="dialogueBoxButton($event)"
 ></app-warning-box><br/>
-<app-success-box></app-success-box><br/>
+<app-success-box
+(onSuccessButtonClick)="dialogueBoxButton($event)"></app-success-box><br/>
 <app-table
 [data]="data"
 [headers]="headers"
