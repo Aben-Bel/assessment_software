@@ -1,0 +1,12 @@
+.message-box{
+    @apply font-sans text-sm rounded-md p-12 w-max relative shadow-lg;
+}
+.message-button{
+    @apply text-center;
+}
+.hide-message-box{
+    @apply hidden;
+}
+p{
+    @apply font-bold text-lg text-center underline decoration-blue-700 underline-offset-[15px];
+}

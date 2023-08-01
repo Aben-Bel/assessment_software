@@ -35,4 +35,10 @@ export class AppComponent {
   textAreaOutput(newText:string){
     this.textAreaValue=newText;
   }
+  dialogueBoxButton(event:any){
+     let button = <HTMLElement>event.target;
+     let buttonText= button.innerHTML;
+
+    console.log(buttonText);
+  }
 }
