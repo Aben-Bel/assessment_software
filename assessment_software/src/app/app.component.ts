@@ -38,7 +38,11 @@ export class AppComponent {
   dialogueBoxButton(event:any){
      let button = <HTMLElement>event.target;
      let buttonText= button.innerHTML;
-
+    console.log(buttonText);
+  }
+  courseCardButton(event:any){
+    let button = <HTMLElement>event.target;
+    let buttonText= button.innerHTML;
     console.log(buttonText);
   }
 }
