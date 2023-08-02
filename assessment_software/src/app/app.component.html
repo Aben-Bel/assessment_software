@@ -1,4 +1,9 @@
 <p>Hello World</p>
+<app-course-card
+(onCourseCardClicked)="courseCardButton($event)"
+(onArchiveClicked)="archiveButton($event)"
+(onAddAssignmentClicked)="assignmentButton($event)"
+(onAddStudentClicked)="studentButton($event)"></app-course-card>
 <app-confirmation-box></app-confirmation-box><br/>
 <app-warning-box
 (onWarningButtonClick)="dialogueBoxButton($event)"

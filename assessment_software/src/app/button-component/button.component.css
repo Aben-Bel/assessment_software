@@ -2,5 +2,5 @@
 @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 .button-primary {
-  @apply text-white bg-indigo-600 py-2.5 px-5 rounded-lg border-0 hover:bg-indigo-700 w-32 h-9;
+  @apply text-white bg-indigo-600 py-2.5 px-5 rounded-lg border-0 hover:bg-indigo-700 w-max h-9;
 }
