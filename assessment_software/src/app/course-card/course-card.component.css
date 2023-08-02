@@ -4,3 +4,6 @@
 .courseInformation{
     @apply leading-3 font-normal;
 }
+button{
+    @apply border-none bg-transparent float-right cursor-pointer;
+}

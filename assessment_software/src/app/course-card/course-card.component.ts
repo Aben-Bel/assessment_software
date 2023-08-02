@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CourseCardComponent {
   @Input() courseName:string='Course Name';
-  @Input() year_semester:string='2023/1';
+  @Input() year_semester= new Date().getFullYear() + "/1";
   @Input() assignments:Number=0;
   @Input() submissions:Number=0;
   @Output() onCourseCardButtonClicked= new EventEmitter;
