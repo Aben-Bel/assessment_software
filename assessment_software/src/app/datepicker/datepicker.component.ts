@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -6,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class DatepickerComponent {
   @Input() id: string = '';
-  @Input() variant: string = 'date';
+  @Input() variant: 'date' | 'datetime' = 'date';
   @Output() onDateChange = new EventEmitter<string>();
 
   hangleDateChange(event: any) {
