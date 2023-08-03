@@ -41,6 +41,19 @@ export class AppComponent {
     console.log(buttonText);
   }
   courseCardButton(event:any){
+     console.log("card");
+  }
+  archiveButton(event:any){
+    let button = <HTMLElement>event.target;
+    let buttonText= button.innerHTML;
+    console.log("buttonText");
+  }
+  assignmentButton(event:any){
+    let button = <HTMLElement>event.target;
+    let buttonText= button.innerHTML;
+    console.log(buttonText);
+  }
+  studentButton(event:any){
     let button = <HTMLElement>event.target;
     let buttonText= button.innerHTML;
     console.log(buttonText);
