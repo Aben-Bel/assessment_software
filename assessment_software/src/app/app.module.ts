@@ -10,6 +10,7 @@ import { FileUploadComponent } from './file-upload-component/file-upload.compone
 import {TextareaComponent} from './textarea-component/textarea.component'
 import { PathDisplayComponent } from './path-display/path-display.component';
 import {TableComponent} from './table-component/table.component';
+import {ProfileAvatarComponent} from './profile-avatar/profile-avatar-component';
 
 import { ConfirmationBoxComponent } from './dialogue-box/confirmationBox-component/confirmationBox.component';
 import { SuccessBoxComponent } from './dialogue-box/successBox-component/successBox.component';
@@ -17,7 +18,8 @@ import {WarningBoxComponent} from './dialogue-box/warnngBox-component/warningBox
 import { CourseCardComponent } from './course-card/course-card.component';
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, 
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent],
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,
+    ProfileAvatarComponent],
 
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
