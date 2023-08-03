@@ -1,3 +1,16 @@
+*{
+    @apply font-sans;
+}
 .avatar{
-    @apply rounded-full w-max px-4 py-2 text-white bg-indigo-600 font-sans text-xl ;
+    @apply rounded-full w-max px-4 py-2 text-white bg-indigo-600 text-xl inline-block;
+}
+.dropDown{
+    @apply w-48 shadow-xl text-gray-500 font-medium;
+}
+.dropDown>a{
+    @apply block p-4 underline underline-offset-8 decoration-from-font;
+    /* border border-solid border-t-0 border-r-0 border-l-0; */
+}
+button{
+    @apply bg-transparent border-none cursor-pointer mx-2;
 }
