@@ -7,16 +7,15 @@ styleUrls:['./profile-avatar-component.css']})
 export class ProfileAvatarComponent{
     isClicked:boolean=false;
     @Input() avatar_name:string='Charlotte';
-    @Output() onPwdClick= new EventEmitter;
-    @Output() onLogoutClick=new EventEmitter;
+    @Input() dnMenuLinks:string[]=[];
+    @Input() dnMenuText:string[]=[];
+    @Output() onMenuClick=new EventEmitter;
     
     dropClicked(){
         this.isClicked=!(this.isClicked);
     }
-    handleLogoutClick(event:any){
-        this.onLogoutClick.emit(event);
-    }
-    handleChangePwdClick(event:any){
-        this.onPwdClick.emit(event);
+    handleClick(event:any){
+        this.onMenuClick.emit(event);
+        console.log(event.target.text);
     }
 }

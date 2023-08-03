@@ -28,7 +28,8 @@ export class AppComponent {
     Email:""
    }
  ]
-
+  menuLinks=["\\Change Password", "\\Log Out"];
+  menuLabels=['Change Password', "Log Out"];
   eventOutput(newFile:any){
     this.fileSelected=newFile;
   }
