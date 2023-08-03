@@ -8,8 +8,7 @@
     @apply w-48 shadow-xl text-gray-500 font-medium;
 }
 .dropDown>a{
-    @apply block p-4 underline underline-offset-8 decoration-from-font;
-    /* border border-solid border-t-0 border-r-0 border-l-0; */
+    @apply block p-4 underline underline-offset-8 decoration-from-font cursor-pointer;
 }
 button{
     @apply bg-transparent border-none cursor-pointer mx-2;
