@@ -1,0 +1,6 @@
+<input
+  class="datepicker"
+  [ngClass]="variant === 'datetime' ? 'datetime' : 'date'"
+  [type]="variant === 'datetime' ? 'datetime-local' : 'date'"
+  (input)="hangleDateChange($event)"
+/>

@@ -3,59 +3,75 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'assessment_software';
-  fileSelected:any[]=[];
+  fileSelected: any[] = [];
 
-  pathDisplay:string[]=['DSA','Assignment','Assignment 1','Edit Assignment'];
-  links:string[]=['/DSA','/Assignment','/Assignment 1','/Edit Assignment'];
+  pathDisplay: string[] = [
+    'DSA',
+    'Assignment',
+    'Assignment 1',
+    'Edit Assignment',
+  ];
+  links: string[] = [
+    '/DSA',
+    '/Assignment',
+    '/Assignment 1',
+    '/Edit Assignment',
+  ];
 
-  textAreaValue:string='';
+  textAreaValue: string = '';
 
-  headers:string[]=['Name','ID','Passcode','Email',"koo"];
-  data:any[]=[{
-    Name:"Abebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-    ID:"1",
-    Passcode:"AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-    Email:"AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
-   },
-   {
-    Name:"Bekele",
-    ID:"2",
-    Passcode:"",
-    Email:""
-   }
- ]
+  headers: string[] = ['Name', 'ID', 'Passcode', 'Email', 'koo'];
+  data: any[] = [
+    {
+      Name: 'Abebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+      ID: '1',
+      Passcode:
+        'AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+      Email:
+        'AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+    },
+    {
+      Name: 'Bekele',
+      ID: '2',
+      Passcode: '',
+      Email: '',
+    },
+  ];
 
-  eventOutput(newFile:any){
-    this.fileSelected=newFile;
+  dateChange(date: string) {
+    console.log('date: ', date);
   }
-  textAreaOutput(newText:string){
-    this.textAreaValue=newText;
+  eventOutput(newFile: any) {
+    this.fileSelected = newFile;
   }
-  dialogueBoxButton(event:any){
-     let button = <HTMLElement>event.target;
-     let buttonText= button.innerHTML;
+  textAreaOutput(newText: string) {
+    this.textAreaValue = newText;
+  }
+  dialogueBoxButton(event: any) {
+    let button = <HTMLElement>event.target;
+    let buttonText = button.innerHTML;
     console.log(buttonText);
   }
-  courseCardButton(event:any){
-     console.log("card");
+  courseCardButton(event: any) {
+    console.log('card');
   }
-  archiveButton(event:any){
+  archiveButton(event: any) {
     let button = <HTMLElement>event.target;
-    let buttonText= button.innerHTML;
-    console.log("buttonText");
+    let buttonText = button.innerHTML;
+    console.log('buttonText');
   }
-  assignmentButton(event:any){
+  assignmentButton(event: any) {
     let button = <HTMLElement>event.target;
-    let buttonText= button.innerHTML;
+    let buttonText = button.innerHTML;
     console.log(buttonText);
   }
-  studentButton(event:any){
+  studentButton(event: any) {
     let button = <HTMLElement>event.target;
-    let buttonText= button.innerHTML;
+    let buttonText = button.innerHTML;
     console.log(buttonText);
   }
 }
