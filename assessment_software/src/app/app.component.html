@@ -1,4 +1,12 @@
 <p>Hello World</p>
+<app-datepicker
+  (onDateChange)="dateChange($event)"
+  variant="datetime"
+></app-datepicker>
+<app-datepicker
+  (onDateChange)="dateChange($event)"
+  variant="date"
+></app-datepicker>
 <app-assignment-card></app-assignment-card>
 <app-course-card
   (onCourseCardClicked)="courseCardButton($event)"
