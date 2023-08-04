@@ -12,5 +12,6 @@ export class DatepickerComponent {
 
   hangleDateChange(event: any) {
     this.onDateChange.emit(event.target.value);
+    console.log('change: ', event.target.value);
   }
 }
