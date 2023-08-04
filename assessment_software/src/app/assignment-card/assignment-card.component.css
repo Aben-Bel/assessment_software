@@ -1,0 +1,29 @@
+.card {
+  @apply font-sans font-bold rounded-md w-96 relative border-solid border-2 border-gray-100 text-left;
+}
+
+.subsection {
+  @apply p-4;
+}
+
+.normal-font {
+  @apply font-normal text-gray-500;
+}
+
+.row-space {
+  @apply flex flex-col space-y-2;
+}
+
+.baseline {
+  @apply flex items-center mx-1 no-underline text-sm space-x-2 text-gray-500;
+}
+
+.right-align {
+  @apply flex justify-end;
+}
+
+.horizontal {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}

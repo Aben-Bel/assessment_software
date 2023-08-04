@@ -18,8 +18,7 @@ import { CourseCardComponent } from './course-card/course-card.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, 
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent, DatepickerComponent],
-
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
