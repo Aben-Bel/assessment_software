@@ -1,0 +1,7 @@
+.tooltip-contianer {
+  @apply inline-flex flex-row items-center m-0;
+}
+
+.message-container {
+  @apply w-3/12 m-0 border border-gray-500 rounded-md;
+}

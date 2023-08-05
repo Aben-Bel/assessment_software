@@ -16,9 +16,11 @@ import { SuccessBoxComponent } from './dialogue-box/successBox-component/success
 import {WarningBoxComponent} from './dialogue-box/warnngBox-component/warningBox.component';
 import { CourseCardComponent } from './course-card/course-card.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
+import { AssignmentCardComponent } from './assignment-card/assignment-card.component';
+import { HelpComponentComponent } from './help-component/help-component.component';
 @NgModule({
-  declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, 
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent],
+  declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent,
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, HelpComponentComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
