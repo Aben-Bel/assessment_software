@@ -1,14 +1,26 @@
 *{
     @apply font-sans;
 }
+.profile-container{
+    @apply w-max inline-flex flex justify-end float-right;
+}
+.column-wise{
+    @apply flex flex-col;
+}
+.right-align{
+    @apply inline-flex flex justify-end;
+}
 .avatar{
     @apply rounded-full w-max px-4 py-2 text-white bg-indigo-600 text-xl inline-block;
 }
 .dropDown{
-    @apply w-48 shadow-xl font-medium;
+    @apply shadow-xl font-medium;
 }
 .dropDown>a{
-    @apply block p-4 underline underline-offset-8 decoration-from-font text-gray-500 cursor-pointer;
+    @apply block py-2 p-4 no-underline text-gray-500 cursor-pointer;
+}
+.underline{
+    @apply border-t-0 border-r-0 border-l-0 border-b border-gray-500 border-solid mt-2 w-40;
 }
 button{
     @apply bg-transparent border-none cursor-pointer mx-2;
