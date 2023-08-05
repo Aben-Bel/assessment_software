@@ -1,5 +1,5 @@
 .course-box{
-    @apply font-sans font-bold rounded-md p-4 w-max relative border-solid border-2 border-gray-100 text-left;
+    @apply inline-block font-sans font-bold rounded-md p-4 w-max relative border-solid border-2 border-gray-100 text-left;
 }
 .courseInformation{
     @apply leading-3 font-normal;
