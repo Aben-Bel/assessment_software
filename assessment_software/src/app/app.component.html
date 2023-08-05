@@ -1,33 +1,48 @@
 <p>Hello World</p>
 <app-profile-avatar
 [dnMenuLinks]="menuLinks" [dnMenuText]="menuLabels"></app-profile-avatar>
+<app-datepicker
+  (onDateChange)="dateChange($event)"
+  variant="datetime"
+></app-datepicker>
+<app-datepicker
+  (onDateChange)="dateChange($event)"
+  variant="date"
+></app-datepicker>
+<app-assignment-card></app-assignment-card>
 <app-course-card
-(onCourseCardClicked)="courseCardButton($event)"
-(onArchiveClicked)="archiveButton($event)"
-(onAddAssignmentClicked)="assignmentButton($event)"
-(onAddStudentClicked)="studentButton($event)"></app-course-card>
-<app-confirmation-box></app-confirmation-box><br/>
+  (onCourseCardClicked)="courseCardButton($event)"
+  (onArchiveClicked)="archiveButton($event)"
+  (onAddAssignmentClicked)="assignmentButton($event)"
+  (onAddStudentClicked)="studentButton($event)"
+></app-course-card>
+<app-confirmation-box></app-confirmation-box><br />
 <app-warning-box
-(onWarningButtonClick)="dialogueBoxButton($event)"
-></app-warning-box><br/>
+  (onWarningButtonClick)="dialogueBoxButton($event)"
+></app-warning-box
+><br />
 <app-success-box
-(onSuccessButtonClick)="dialogueBoxButton($event)"></app-success-box><br/>
+  (onSuccessButtonClick)="dialogueBoxButton($event)"
+></app-success-box
+><br />
 <app-table
-[data]="data"
-[headers]="headers"
-[isWrappable]="true"
-layout="fixed"
-[isScrollable]="true"
+  [data]="data"
+  [headers]="headers"
+  [isWrappable]="true"
+  layout="fixed"
+  [isScrollable]="true"
 ></app-table>
-<br/>
+<br />
 <app-table
-[data]="data"
-[headers]="headers"
-layout="auto"
-[isScrollable]="true"
+  [data]="data"
+  [headers]="headers"
+  layout="auto"
+  [isScrollable]="true"
 ></app-table>
 <app-button variant="Outlined" color="#3056D3"> Outlined</app-button>
-<app-button variant="Filled" color="white" background="#3056d3"> Filled</app-button>
+<app-button variant="Filled" color="white" background="#3056d3">
+  Filled</app-button
+>
 <app-button variant="Standard" color="#3056D3"> Standard</app-button>
 <br />
 <app-textfield
@@ -56,27 +71,23 @@ layout="auto"
   errorMessage="Error occurred"
 ></app-textfield>
 
+<app-file-upload accept=".txt" fileSizeLimit="2"></app-file-upload>
+<br />
 <app-file-upload
-accept=".txt"
-fileSizeLimit=2
+  accept=".txt"
+  [error]="true"
+  (fileSelected)="eventOutput($event)"
 ></app-file-upload>
-<br/>
-<app-file-upload
-accept=".txt"
-[error]=true
-(fileSelected)="eventOutput($event)"
-></app-file-upload>
-<br/>
+<br />
 <!-- <p *ngFor="let file of fileSelected">{{file.name}}</p> -->
 <app-path-display
-[links]="['/DSA','/Assignment','/Assignment 1','/Edit Assignment']"
-[pathDisplay]="['DSA','Assignment','Assignment 1','Edit Assignment']"
+  [links]="['/DSA', '/Assignment', '/Assignment 1', '/Edit Assignment']"
+  [pathDisplay]="['DSA', 'Assignment', 'Assignment 1', 'Edit Assignment']"
 ></app-path-display>
-<br/>
+<br />
 <app-textarea
-[maxlength]=30
-[minlength]=10
-(onValueChange)="textAreaOutput($event)"
+  [maxlength]="30"
+  [minlength]="10"
+  (onValueChange)="textAreaOutput($event)"
 ></app-textarea>
 <!-- <p>{{textAreaValue}}</p> -->
-

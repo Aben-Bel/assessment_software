@@ -1,0 +1,11 @@
+.datepicker {
+  @apply text-gray-600 cursor-pointer box-border h-8 w-36 p-4 rounded border-zinc-300 border-solid;
+}
+
+.datetime {
+  @apply w-48;
+}
+
+.date {
+  @apply w-36;
+}
