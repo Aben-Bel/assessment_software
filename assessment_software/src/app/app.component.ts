@@ -41,8 +41,7 @@ export class AppComponent {
  ]
   menuLinks=["\\Change Password", "\\Log Out"];
   menuLabels=['Change Password', "Log Out"];
-  eventOutput(newFile:any){
-    this.fileSelected=newFile;
+ 
    dateChange(date: string) {
     console.log('date: ', date);
 
