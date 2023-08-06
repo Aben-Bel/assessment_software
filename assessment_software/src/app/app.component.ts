@@ -24,26 +24,27 @@ export class AppComponent {
 
   textAreaValue: string = '';
 
-  headers: string[] = ['Name', 'ID', 'Passcode', 'Email', 'koo'];
-  data: any[] = [
-    {
-      Name: 'Abebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
-      ID: '1',
-      Passcode:
-        'AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
-      Email:
-        'AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
-    },
-    {
-      Name: 'Bekele',
-      ID: '2',
-      Passcode: '',
-      Email: '',
-    },
-  ];
 
-  dateChange(date: string) {
+  headers:string[]=['Name','ID','Passcode','Email',"koo"];
+  data:any[]=[{
+    Name:"Abebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    ID:"1",
+    Passcode:"AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    Email:"AbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhAbebehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+   },
+   {
+    Name:"Bekele",
+    ID:"2",
+    Passcode:"",
+    Email:""
+   }
+ ]
+  menuLinks=["\\Change Password", "\\Log Out"];
+  menuLabels=['Change Password', "Log Out"];
+ 
+   dateChange(date: string) {
     console.log('date: ', date);
+
   }
   eventOutput(newFile: any) {
     this.fileSelected = newFile;
