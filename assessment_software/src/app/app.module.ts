@@ -18,10 +18,11 @@ import {WarningBoxComponent} from './dialogue-box/warnngBox-component/warningBox
 import { CourseCardComponent } from './course-card/course-card.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { AssignmentCardComponent } from './assignment-card/assignment-card.component';
+import { ArchiveCardComponent } from './archive-card/archive-card.component';
 
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, 
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent,ProfileAvatarComponent],
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent,ProfileAvatarComponent, ArchiveCardComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
