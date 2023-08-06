@@ -8,7 +8,7 @@ import { Component, Input, HostListener } from '@angular/core';
 export class HelpComponentComponent {
   hide = true;
 
-  @Input() helpMessage: string = '';
+  @Input() helpMessage: string = 'No guide available for the time being.';
 
   @HostListener('mouseenter') onMouseEnter() {
     this.hide = false;
