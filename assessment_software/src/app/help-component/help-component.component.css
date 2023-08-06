@@ -1,15 +1,28 @@
 .tooltip-contianer {
-  @apply inline-flex flex-row items-center m-0;
+  @apply inline-flex items-center;
+}
+
+.message-container-hide {
+  @apply hidden;
 }
 
 .message-container {
-  @apply w-3/12 p-2 m-0 border border-solid rounded-md;
+  @apply absolute z-10 max-h-fit;
+}
+
+.row {
+  @apply inline-flex flex-row items-center ml-6;
+}
+
+p {
+  @apply w-3/12 p-2 m-0 text-black rounded-md shadow-md bg-slate-200;
 }
 
 .arrow-left {
+  @apply z-10;
   width: 0;
   height: 0;
-  border-right: 10px solid #000;
+  border-right: 10px solid #e2e8f0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   background-color: transparent;

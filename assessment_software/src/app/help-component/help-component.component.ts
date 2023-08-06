@@ -1,11 +1,20 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-help-component',
   templateUrl: './help-component.component.html',
-  styleUrls: ['./help-component.component.css']
+  styleUrls: ['./help-component.component.css'],
 })
 export class HelpComponentComponent {
-  @Input() helpMessage : string = '';
-  
+  hide = true;
+
+  @Input() helpMessage: string = '';
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.hide = false;
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.hide = true;
+  }
 }

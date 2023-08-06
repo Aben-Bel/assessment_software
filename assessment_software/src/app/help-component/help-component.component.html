@@ -13,8 +13,12 @@
       fill="black"
     />
   </svg>
-  <div class="arrow-left"></div>
-  <div class="message-container">
-    <p>{{ helpMessage }}</p>
+  <div
+    [ngClass]="hide === true ? 'message-container-hide' : 'message-container'"
+  >
+    <div class="row">
+      <div class="arrow-left"></div>
+      <p>{{ helpMessage }}</p>
+    </div>
   </div>
 </div>
