@@ -11,7 +11,7 @@ export class HelpComponentComponent {
   @Input() helpMessage: string = 'No guide available for the time being.';
 
   toggleHide(show: boolean) {
-    this.hide = !show;
+    this.hide = show;
   }
 
   @HostListener('mouseenter') onEnter() {
