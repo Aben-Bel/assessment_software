@@ -10,11 +10,15 @@ export class HelpComponentComponent {
 
   @Input() helpMessage: string = 'No guide available for the time being.';
 
-  @HostListener('mouseenter') onMouseEnter() {
-    this.hide = false;
+  toggleHide(show: boolean) {
+    this.hide = !show;
   }
 
-  @HostListener('mouseleave') onMouseLeave() {
-    this.hide = true;
+  @HostListener('mouseenter') onEnter() {
+    this.toggleHide(false);
+  }
+
+  @HostListener('mouseleave') onLeave() {
+    this.toggleHide(true);
   }
 }
