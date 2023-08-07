@@ -12,23 +12,31 @@ import { EditAssignmentComponent } from './page/edit assignment/edit-assignment/
 import { HomeComponent } from './page/home/home/home.component';
 import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
-
+import { ComponentsComponent } from './page/components/components.component';
 const routes: Routes = [
- 
+  { path: 'component', component: ComponentsComponent },
   { path: 'archived', component: ArchivedComponent },
   { path: 'signin', component: SignInComponent },
   { path: 'change_password', component: ChangePasswordComponent },
-  { path: 'courses', component: HomeComponent, 
-      children:[
-        { path: 'course_name', component: CourseComponent, 
-            children:[
-            { path: 'edit assignment', component: EditAssignmentComponent  },
-            { path: 'add assignment', component: AddAssignmentComponent },
-            { path: 'student_list', component: StudentListComponent },
-            {path: 'assignment', component: AssignmentComponent,
-                children:[{path: 'assignment_name', component: AssignmentDetailComponent}]}
-          ]},
-  ] },
+    { path: 'courses', component: HomeComponent },
+    { path: 'courses/:course_name', component: CourseComponent },
+    {
+      path: 'courses/:course_name/edit_assignment',
+      component: EditAssignmentComponent,
+    },
+    {
+      path: 'courses/:course_name/student_list',
+      component: StudentListComponent,
+    },
+    {
+      path: 'courses/:course_name/add_assignment',
+      component: AddAssignmentComponent,
+    },
+    {
+      path: 'courses/:course_name/assignment/:assignmentId',
+      component: AssignmentDetailComponent,
+   },
+  { path: '',   redirectTo: '/courses', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 
