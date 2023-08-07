@@ -20,9 +20,10 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { AssignmentCardComponent } from './assignment-card/assignment-card.component';
 import { ArchiveCardComponent } from './archive-card/archive-card.component';
 
+import { HelpComponentComponent } from './help-component/help-component.component';
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent, 
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent,ProfileAvatarComponent, ArchiveCardComponent],
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent,ProfileAvatarComponent, ArchiveCardComponent, HelpComponentComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
