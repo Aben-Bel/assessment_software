@@ -18,6 +18,10 @@ import {WarningBoxComponent} from './dialogue-box/warnngBox-component/warningBox
 import { CourseCardComponent } from './course-card/course-card.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { AssignmentCardComponent } from './assignment-card/assignment-card.component';
+
+import { ArchiveCardComponent } from './archive-card/archive-card.component';
+
+
 import { HelpComponentComponent } from './help-component/help-component.component';
 
 import { PageNotFoundComponent } from './page/404 page/page-not-found/page-not-found.component';
@@ -34,7 +38,7 @@ import { AssignmentComponent } from './page/assignment/assignment.component';
 
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent,
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, ProfileAvatarComponent, HelpComponentComponent, PageNotFoundComponent, AddAssignmentComponent, ArchivedComponent, AssignmentDetailComponent, ChangePasswordComponent, CourseComponent, EditAssignmentComponent, HomeComponent, SignInComponent, StudentListComponent, AssignmentComponent],
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, ProfileAvatarComponent, ArchiveCardComponent, HelpComponentComponent, PageNotFoundComponent, AddAssignmentComponent, ArchivedComponent, AssignmentDetailComponent, ChangePasswordComponent, CourseComponent, EditAssignmentComponent, HomeComponent, SignInComponent, StudentListComponent, AssignmentComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
