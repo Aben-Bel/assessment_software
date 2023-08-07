@@ -18,13 +18,6 @@ const routes: Routes = [
   { path: 'archived', component: ArchivedComponent },
   { path: 'signin', component: SignInComponent },
   { path: 'change_password', component: ChangePasswordComponent },
-
-  // { path: 'assignment/assignment_name', component: AssignmentDetailComponent },
-  // { path: 'add assignment', component: AddAssignmentComponent },
-  // { path: 'courses/course_name', component: CourseComponent, },
- // { path: 'edit assignment', component: EditAssignmentComponent  },
-  // { path: 'student_list', component: StudentListComponent },
-  
   { path: 'courses', component: HomeComponent, 
       children:[
         { path: 'course_name', component: CourseComponent, 
