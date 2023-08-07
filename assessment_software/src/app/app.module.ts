@@ -18,21 +18,23 @@ import {WarningBoxComponent} from './dialogue-box/warnngBox-component/warningBox
 import { CourseCardComponent } from './course-card/course-card.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { AssignmentCardComponent } from './assignment-card/assignment-card.component';
-
 import { HelpComponentComponent } from './help-component/help-component.component';
+
 import { PageNotFoundComponent } from './page/404 page/page-not-found/page-not-found.component';
 import { AddAssignmentComponent } from './page/add assignment/add-assignment/add-assignment.component';
 import { ArchivedComponent } from './page/archived/archived/archived.component';
 import { AssignmentDetailComponent } from './page/assignment detail/assignment-detail/assignment-detail.component';
-import { ChangePasswordComponent } from './page/assignment detail/change-password/change-password.component';
+import { ChangePasswordComponent } from './page/change password/change-password/change-password.component';
 import { CourseComponent } from './page/course/course/course.component';
-import { EditAssignmentComponent } from './page/course/edit-assignment/edit-assignment.component';
+import { EditAssignmentComponent } from './page/edit assignment/edit-assignment/edit-assignment.component';
 import { HomeComponent } from './page/home/home/home.component';
 import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
+import { AssignmentComponent } from './page/assignment/assignment.component';
+
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent,
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, ProfileAvatarComponent, HelpComponentComponent, PageNotFoundComponent, AddAssignmentComponent, ArchivedComponent, AssignmentDetailComponent, ChangePasswordComponent, CourseComponent, EditAssignmentComponent, HomeComponent, SignInComponent, StudentListComponent],
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, ProfileAvatarComponent, HelpComponentComponent, PageNotFoundComponent, AddAssignmentComponent, ArchivedComponent, AssignmentDetailComponent, ChangePasswordComponent, CourseComponent, EditAssignmentComponent, HomeComponent, SignInComponent, StudentListComponent, AssignmentComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
