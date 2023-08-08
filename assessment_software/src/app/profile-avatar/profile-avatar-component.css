@@ -2,13 +2,13 @@
     @apply font-sans;
 }
 .profile-container{
-    @apply inline-flex float-right;
+    @apply inline-flex justify-end;
 }
 .column-wise{
     @apply flex flex-col;
 }
 .right-align{
-    @apply inline-flex  justify-end;
+    @apply inline-flex justify-end;
 }
 .avatar{
     @apply rounded-full w-max px-4 py-2 text-white bg-indigo-600 text-xl inline-block;
