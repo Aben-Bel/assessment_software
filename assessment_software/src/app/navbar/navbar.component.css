@@ -1,0 +1,10 @@
+.navbar-container{
+    @apply  border-gray-200 border border-solid rounded px-2 py-4 text-sm font-sans;
+}
+.selectedLink{
+    @apply inline no-underline text-white bg-indigo-600 py-2.5 px-5 mr-4 rounded-lg border-0 w-max h-max cursor-pointer;
+}
+
+.navbarLink{
+    @apply inline no-underline text-gray-500 bg-transparent py-2.5 px-5 mr-4 rounded-lg border-0 w-max h-max cursor-pointer;
+}
