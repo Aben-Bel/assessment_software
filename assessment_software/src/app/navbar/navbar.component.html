@@ -1,5 +1,12 @@
 <div class="navbar-container">
-    <a *ngFor="let t of title; index as i"
-    [routerLink]="url[i]" 
- routerLinkActive="selectedLink">{{t}}</a>
+    <div class="options-container">
+        <a *ngFor="let t of title; index as i"
+            [routerLink]="[url[i]]" 
+            routerLinkActive="selectedLink"
+            >{{t}}
+        </a>
+    </div>
+    <div class="avatar-container">
+        <app-profile-avatar></app-profile-avatar>
+    </div>
 </div>

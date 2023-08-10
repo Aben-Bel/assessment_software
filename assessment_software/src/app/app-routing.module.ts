@@ -14,12 +14,11 @@ import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
 import { ComponentsComponent } from './page/components/components.component';
 const routes: Routes = [
-  { path: 'component', component: ComponentsComponent,
-    children:[{ path: 'archived', component: ArchivedComponent }, { path: 'courses', component: HomeComponent },] },
-  // { path: 'archived', component: ArchivedComponent },
+  { path: 'component', component: ComponentsComponent,},
+  { path: 'archived', component: ArchivedComponent },
   { path: 'signin', component: SignInComponent },
   { path: 'change_password', component: ChangePasswordComponent },
-    // { path: 'courses', component: HomeComponent },
+    { path: 'courses', component: HomeComponent },
     { path: 'courses/:course_name', component: CourseComponent },
     {
       path: 'courses/:course_name/edit_assignment',
