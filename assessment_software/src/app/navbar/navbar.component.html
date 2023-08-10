@@ -1,6 +1,5 @@
 <div class="navbar-container">
     <a *ngFor="let t of title; index as i"
-    [href]="url[i]" 
-    [ngClass]="i ===0? 'selectedLink':'navbarLink'">{{t}}</a>
+    [routerLink]="url[i]" 
+ routerLinkActive="selectedLink">{{t}}</a>
 </div>
- 

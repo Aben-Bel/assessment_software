@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   title:string[]=['Courses','Archived','Another'];
-  url:string[]=["k","k","l"];
+  url:string[]=["\courses","\archived","\l"];
   
 }
