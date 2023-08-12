@@ -1,9 +1,21 @@
 <div class="form-container">
     <form>
         <p>Add Course</p>
-        <label>COURSE NAME</label>
-        <app-textfield type="text" variant="Outlined" outline="2px solid #2B4BF2"></app-textfield>
-        <label>YEAR-SEMESTER</label>
-        <app-textfield type="text" variant="Outlined" outline="2px solid #2B4BF2"></app-textfield>
+        <label for= "course">COURSE NAME</label>
+        <app-textfield 
+        id="course"
+        type="text" 
+        variant="Outlined" 
+        outline="2px solid #2B4BF2"></app-textfield>
+        <label for= "year_semester">YEAR-SEMESTER</label>
+        <app-textfield 
+        id="year_semester"
+        type="text" 
+        variant="Outlined" 
+        outline="2px solid #2B4BF2"></app-textfield>
+        <div class="button-container">
+            <app-button variant="Standard" color="gray">Cancel</app-button>
+            <app-button variant="Filled" color="white">Confirm</app-button>
+        </div>
     </form>
 </div>
