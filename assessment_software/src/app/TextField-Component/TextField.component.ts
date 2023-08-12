@@ -14,6 +14,7 @@ export class TextField{
     @Input() placeholder: string = '';
     @Input() autofocus: boolean = false;
     @Input() classes: string = 'textfield-skin';
+    @Input() outline:string='1px solid #E0E0E0';
     @Input() color: string = 'black';
     @Input() error: boolean = false;
     @Input() required: boolean = false;

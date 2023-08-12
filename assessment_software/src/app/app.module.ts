@@ -36,10 +36,11 @@ import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
 import { AssignmentComponent } from './page/assignment/assignment.component';
 import { ComponentsComponent } from './page/components/components.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent,
-    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, ProfileAvatarComponent, ArchiveCardComponent, HelpComponentComponent, PageNotFoundComponent, AddAssignmentComponent, ArchivedComponent, AssignmentDetailComponent, ChangePasswordComponent, CourseComponent, EditAssignmentComponent, HomeComponent, SignInComponent, StudentListComponent, AssignmentComponent, ComponentsComponent],
+    PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, ProfileAvatarComponent, ArchiveCardComponent, HelpComponentComponent, PageNotFoundComponent, AddAssignmentComponent, ArchivedComponent, AssignmentDetailComponent, ChangePasswordComponent, CourseComponent, EditAssignmentComponent, HomeComponent, SignInComponent, StudentListComponent, AssignmentComponent, ComponentsComponent, AddCourseComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
