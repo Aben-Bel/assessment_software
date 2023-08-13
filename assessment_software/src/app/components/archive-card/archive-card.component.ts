@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { CourseCard } from '../model/course-card/course-card.model';
+import { CourseCard } from 'src/app/model/course-card/course-card.model';
 
 @Component({
   selector: 'app-archive-card',
