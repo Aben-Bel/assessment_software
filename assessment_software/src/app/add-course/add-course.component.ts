@@ -21,12 +21,18 @@ export class AddCourseComponent {
   courseNameInput=this.addCourseForm.controls['courseName'];
   semesterYearInput=this.addCourseForm.controls['semesterYear'];
 
-  submitCourse() {
+  courseNameChange(event:any){
+    this.courseNameInput.setValue(event);
+  }
+  
+  semesterYearChange(event:any){
+    this.semesterYearInput.setValue(event);
+   }
+
+   submitCourse() {
     this.courseService.submitCourse(
       this.addCourseForm.value.courseName ?? '',
       this.addCourseForm.value. semesterYear ?? ''
     );
-    console.log( this.addCourseForm.value. semesterYear);
   }
-
 }

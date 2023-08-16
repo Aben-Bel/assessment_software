@@ -8,6 +8,7 @@
         variant="Outlined" 
         outline="2px solid #2B4BF2"
         [inputForm]="courseNameInput"
+        (onChange)="courseNameChange($event)"
         ></app-textfield>
         <label for= "year_semester">YEAR-SEMESTER</label>
         <app-textfield 
@@ -16,12 +17,11 @@
         variant="Outlined" 
         outline="2px solid #2B4BF2"
         [inputForm]="semesterYearInput"
+        (onChange)="semesterYearChange($event)"
         ></app-textfield>
         <div class="button-container">
             <app-button variant="Standard" color="gray" type="reset">Cancel</app-button>
             <app-button variant="Filled" color="white" type="submit" >Confirm</app-button>
-            <!-- <button type="clear">Cancel</button>
-            <button type="submit" >Confirm</button> -->
         </div>
     </form>
 </div>
