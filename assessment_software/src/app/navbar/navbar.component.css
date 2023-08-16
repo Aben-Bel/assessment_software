@@ -1,5 +1,5 @@
 .navbar-container{
-    @apply  bg-white border-gray-200 border border-solid rounded px-2 text-sm font-sans fixed top-1 left-1 right-1 grid grid-cols-4 gap-2 items-center py-2;
+    @apply  bg-white border-gray-200 border border-solid rounded px-2 text-sm font-sans fixed top-1 left-1 right-1 grid grid-cols-4 gap-2 items-center py-2 mt-16;
 }
 .selectedLink{
     @apply inline no-underline text-white bg-indigo-600 py-2.5 px-5 mr-4 rounded-lg border-0 w-max h-max cursor-pointer;
