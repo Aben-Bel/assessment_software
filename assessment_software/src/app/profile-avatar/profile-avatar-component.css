@@ -2,19 +2,19 @@
     @apply font-sans;
 }
 .profile-container{
-    @apply w-max inline-flex flex justify-end float-right;
+    @apply inline-flex justify-end;
 }
 .column-wise{
     @apply flex flex-col;
 }
 .right-align{
-    @apply inline-flex flex justify-end;
+    @apply inline-flex justify-end;
 }
 .avatar{
     @apply rounded-full w-max px-4 py-2 text-white bg-indigo-600 text-xl inline-block;
 }
 .dropDown{
-    @apply shadow-xl font-medium;
+    @apply bg-white shadow-xl font-medium absolute z-[200];
 }
 .dropDown>a{
     @apply block py-2 p-4 no-underline text-gray-500 cursor-pointer;

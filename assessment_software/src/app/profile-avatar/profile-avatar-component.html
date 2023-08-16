@@ -5,11 +5,13 @@
             <button
             (click)="dropClicked()"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.64371 9.6271C7.84834 10.7751 6.15109 10.7751 5.35573 9.6271L0.212161 2.20301C-0.213216 1.58903 0.226211 0.75 0.973148 0.75C1.29966 0.75 1.60202 0.921993 1.76889 1.20264L5.28065 7.10883C6.05588 8.41263 7.94356 8.41264 8.7188 7.10884L12.2306 1.20262C12.3975 0.921987 12.6998 0.75 13.0263 0.75C13.7733 0.75 14.2127 1.589 13.7873 2.20296L8.64371 9.6271Z" fill="#525FE1"/></svg> </button>    
         </div> 
-        <div *ngIf="isClicked" class="dropDown">
-            <a *ngFor="let link of dnMenuLinks; index as i"
-            [href]="link" (click)="handleClick($event)">{{dnMenuText[i]}}
-            <div class="underline"></div>
-            </a>
+        <div class="right-align">
+            <div *ngIf="isClicked" class="dropDown">
+                <a *ngFor="let link of dnMenuLinks; index as i"
+                [href]="link" (click)="handleClick($event)">{{dnMenuText[i]}}
+                <div class="underline"></div>
+                </a>
+            </div>
         </div>
     </div>
 
