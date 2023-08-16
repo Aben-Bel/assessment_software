@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,7 +42,7 @@ import { AddCourseComponent } from './add-course/add-course.component';
 @NgModule({
   declarations: [AppComponent, TextField, ButtonComponent, FileUploadComponent, TextareaComponent,
     PathDisplayComponent, TableComponent, ConfirmationBoxComponent, SuccessBoxComponent, WarningBoxComponent, CourseCardComponent,AssignmentCardComponent, DatepickerComponent, ProfileAvatarComponent, ArchiveCardComponent, HelpComponentComponent, PageNotFoundComponent, AddAssignmentComponent, ArchivedComponent, AssignmentDetailComponent, ChangePasswordComponent, CourseComponent, EditAssignmentComponent, HomeComponent, SignInComponent, StudentListComponent, AssignmentComponent, ComponentsComponent, AddCourseComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

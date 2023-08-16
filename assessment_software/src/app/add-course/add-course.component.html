@@ -1,21 +1,27 @@
 <div class="form-container">
-    <form>
+    <form [formGroup]="addCourseForm" (submit)="submitCourse()">
         <p>Add Course</p>
         <label for= "course">COURSE NAME</label>
         <app-textfield 
         id="course"
         type="text" 
         variant="Outlined" 
-        outline="2px solid #2B4BF2"></app-textfield>
+        outline="2px solid #2B4BF2"
+        [inputForm]="courseNameInput"
+        ></app-textfield>
         <label for= "year_semester">YEAR-SEMESTER</label>
         <app-textfield 
         id="year_semester"
         type="text" 
         variant="Outlined" 
-        outline="2px solid #2B4BF2"></app-textfield>
+        outline="2px solid #2B4BF2"
+        [inputForm]="semesterYearInput"
+        ></app-textfield>
         <div class="button-container">
-            <app-button variant="Standard" color="gray">Cancel</app-button>
-            <app-button variant="Filled" color="white">Confirm</app-button>
+            <app-button variant="Standard" color="gray" type="reset">Cancel</app-button>
+            <app-button variant="Filled" color="white" type="submit" >Confirm</app-button>
+            <!-- <button type="clear">Cancel</button>
+            <button type="submit" >Confirm</button> -->
         </div>
     </form>
 </div>

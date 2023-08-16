@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
-
+import { FormControl } from "@angular/forms";
 @Component({
     selector:'app-textfield',
     templateUrl:'./TextField.component.html',
@@ -19,6 +19,7 @@ export class TextField{
     @Input() error: boolean = false;
     @Input() required: boolean = false;
     @Input() type: string = 'email';
+    @Input() inputForm: FormControl=new FormControl('');
     @Input() errorMessage: string = "";
     @Output() onChange = new EventEmitter<string>();
     
