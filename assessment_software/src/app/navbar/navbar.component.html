@@ -2,12 +2,14 @@
     <div class="options-container">
         <a *ngFor="let t of title; index as i"
             [routerLink]="[url[i]]" 
-            [ngClass]="i===0?'selectedLink':''"
             routerLinkActive="selectedLink"
             >{{t}}
         </a>
     </div>
     <div class="avatar-container">
-        <app-profile-avatar></app-profile-avatar>
+        <app-profile-avatar
+        [dnMenuLinks]="['/Change Password', '/Log Out']"
+        [dnMenuText]="['Change Password', 'Log Out']"
+        ></app-profile-avatar>
     </div>
 </div>
