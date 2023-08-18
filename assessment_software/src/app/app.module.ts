@@ -36,6 +36,7 @@ import { PathDisplayComponent } from './components/path-display/path-display.com
 import { ProfileAvatarComponent } from './components/profile-avatar/profile-avatar-component';
 import { TableComponent } from './components/table-component/table.component';
 import { TextareaComponent } from './components/textarea-component/textarea.component';
+import { PaginationComponentComponent } from './components/pagination-component/pagination-component.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { TextareaComponent } from './components/textarea-component/textarea.comp
     AssignmentComponent,
     ComponentsComponent,
     NavbarComponent,
+    PaginationComponentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [],
