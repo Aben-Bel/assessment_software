@@ -13,7 +13,7 @@ import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
 
 const routes: Routes = [
-  { path: 'component', component: ComponentsComponent },
+  { path: 'component', component: ComponentsComponent,},
   { path: 'archived', component: ArchivedComponent },
   { path: 'signin', component: SignInComponent },
   { path: 'change_password', component: ChangePasswordComponent },

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -17,6 +18,7 @@ import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
 import { AssignmentComponent } from './page/assignment/assignment.component';
 import { ComponentsComponent } from './page/components/components.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 // components
 import { TextField } from './components/TextField-Component/TextField.component';
@@ -65,6 +67,7 @@ import { TextareaComponent } from './components/textarea-component/textarea.comp
     StudentListComponent,
     AssignmentComponent,
     ComponentsComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
