@@ -69,7 +69,7 @@ import { TextareaComponent } from './components/textarea-component/textarea.comp
     ComponentsComponent,
     NavbarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })
