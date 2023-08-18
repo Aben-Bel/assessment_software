@@ -1,0 +1,12 @@
+.pagination {
+    @apply inline-block border border-solid border-[#EDEFF1] rounded-md p-4;
+  }
+  
+a {
+    @apply font-sans text-[#838995] px-3 py-2 no-underline border border-solid border-[#EDEFF1] rounded-md mx-2 cursor-pointer;
+  }
+  
+ .selectedLink {
+    @apply bg-[#3056D3] text-gray-50;
+  }
+  
