@@ -19,6 +19,7 @@
   [style.borderRadius]="variant === 'Standard' ? '0px' : 'none'"
   [style.color]="color"
   [type]="type"
+  [style.padding-left]="(type==='email')?'40px': (type==='password')?'40px':''"
   (input)="handleChange($event)"
   aria-describedby="error ? 'error-desc' : null"
 />
