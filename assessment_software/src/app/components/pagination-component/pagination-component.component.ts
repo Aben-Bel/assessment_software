@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./pagination-component.component.css']
 })
 export class PaginationComponentComponent {
-
+/*
+(classes, count(numOfPages), onChange, page(curPage))
+ */
+  classes:string='pagination-container';
 }
