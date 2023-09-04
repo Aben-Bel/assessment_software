@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { CourseService } from '../services/course.service';
+import { AddCourseService } from './add-course-service/add-course.service';
 
 @Component({
   selector: 'app-add-course',
@@ -9,9 +9,10 @@ import { CourseService } from '../services/course.service';
 })
 
 export class AddCourseComponent {
-  courseService:CourseService;
+  courseService:AddCourseService;
+  isCancelClicked:boolean=false;
   
-   constructor(courseService: CourseService) {
+   constructor(courseService: AddCourseService) {
     this.courseService = courseService;
   } 
   addCourseForm = new FormGroup({
@@ -34,5 +35,8 @@ export class AddCourseComponent {
       this.addCourseForm.value.courseName ?? '',
       this.addCourseForm.value. semesterYear ?? ''
     );
+  }
+  cancelButtonClicked(){
+    this.isCancelClicked=true;
   }
 }

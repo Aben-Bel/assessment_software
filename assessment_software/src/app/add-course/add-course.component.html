@@ -1,5 +1,5 @@
-<div class="form-container">
-    <form [formGroup]="addCourseForm" (submit)="submitCourse()">
+<div class="form-container" [ngClass]="isCancelClicked? 'hide-form':''">
+    <form [formGroup]="addCourseForm">
         <p>Add Course</p>
         <label for= "course">COURSE NAME</label>
         <app-textfield 
@@ -20,8 +20,8 @@
         (onChange)="semesterYearChange($event)"
         ></app-textfield>
         <div class="button-container">
-            <app-button variant="Standard" color="gray" type="reset">Cancel</app-button>
-            <app-button variant="Filled" color="white" type="submit" >Confirm</app-button>
+            <app-button variant="Standard" color="gray" (onClick)="cancelButtonClicked()">Cancel</app-button>
+            <app-button variant="Filled" color="white" (onClick)="submitCourse()" >Confirm</app-button>
         </div>
     </form>
 </div>

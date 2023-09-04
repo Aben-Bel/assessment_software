@@ -5,6 +5,7 @@
   [style.background-color]="variant === 'Filled' ? background : 'transparent'"
   [style.border]="variant === 'Outlined' ? '1px solid #3056d3' : 'none'"
   [style.color]="color ? color : 'black'"
+  type="button"
   (click)="handleClick($event)"
 >
   <ng-content></ng-content>
