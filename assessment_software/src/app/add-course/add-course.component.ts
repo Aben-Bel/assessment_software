@@ -10,7 +10,7 @@ import { AddCourseService } from './add-course-service/add-course.service';
 
 export class AddCourseComponent {
   courseService:AddCourseService;
-  isCancelClicked:boolean=false;
+  formButtonClicked:boolean=false;
   
    constructor(courseService: AddCourseService) {
     this.courseService = courseService;
@@ -35,8 +35,9 @@ export class AddCourseComponent {
       this.addCourseForm.value.courseName ?? '',
       this.addCourseForm.value. semesterYear ?? ''
     );
+    this.formButtonClicked=true;
   }
   cancelButtonClicked(){
-    this.isCancelClicked=true;
+    this.formButtonClicked=true;
   }
 }
