@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,7 @@ import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
 import { AssignmentComponent } from './page/assignment/assignment.component';
 import { ComponentsComponent } from './page/components/components.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 // components
@@ -68,8 +70,9 @@ import { TextareaComponent } from './components/textarea-component/textarea.comp
     AssignmentComponent,
     ComponentsComponent,
     NavbarComponent,
+    AddCourseComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
