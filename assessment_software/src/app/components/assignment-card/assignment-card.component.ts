@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { AssignmentCard } from '../model/assignment-card/assignment-card';
+import { AssignmentCard } from 'src/app/model/assignment-card/assignment-card';
 
 @Component({
   selector: 'app-assignment-card',
