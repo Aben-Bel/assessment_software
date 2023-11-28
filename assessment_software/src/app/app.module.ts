@@ -14,7 +14,7 @@ import { AssignmentDetailComponent } from './page/assignment detail/assignment-d
 import { ChangePasswordComponent } from './page/change password/change-password/change-password.component';
 import { CourseComponent } from './page/course/course/course.component';
 import { EditAssignmentComponent } from './page/edit assignment/edit-assignment/edit-assignment.component';
-import { HomeComponent } from './page/home/home/home.component';
+import { HomeComponent } from './page/home/home.component';
 import { SignInComponent } from './page/sign in/sign-in/sign-in.component';
 import { StudentListComponent } from './page/student list/student-list/student-list.component';
 import { AssignmentComponent } from './page/assignment/assignment.component';
