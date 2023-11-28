@@ -1,5 +1,5 @@
 .course-box {
-  @apply relative inline-block p-2 font-sans font-bold text-left border-2 border-gray-100 border-solid rounded-md w-72;
+  @apply relative inline-block p-2 font-sans font-bold text-left border-2 border-gray-100 border-solid rounded-md w-72 m-2;
 }
 
 .row-space-between {
